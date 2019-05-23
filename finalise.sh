@@ -51,6 +51,9 @@ else
     rm -rf "/Applications/Xcode.app/"
 fi
 
+# show the build number of Xcode in the AppIcon
+defaults write com.apple.dt.Xcode ShowDVTDebugMenu YES
+
 # Notify user all is done
 su -l "$consoleuser" -c " "'"'$tn'"'" -title "'"Xcode Install"'" -message "'"Xcode install completed!"'" "
 
